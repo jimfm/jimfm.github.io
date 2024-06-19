@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Jim Munro
 
 # Your name to show in the footer
-author: Some Person
+author: Jim Munro [jim@jimmunro.net]
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://jimmunro.net"
 
 ################
 # --- Logo --- #
@@ -52,19 +52,15 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  github: jimfm
+  twitter: jimfmunro
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+#  linkedin: jimfmunro
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+#  instagram: noone-yet
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -100,7 +96,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "JimMunro.net"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
