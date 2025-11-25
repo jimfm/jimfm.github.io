@@ -1,0 +1,21 @@
+# GitHub Pages Jekyll Configuration
+# Visit https://jekyllrb.com/docs/configuration for more settings
+
+title: My GitHub Pages Site
+description: A personal website built with GitHub Pages
+url: "https://jimfm.dev"
+baseurl: ""
+github_username: jimfm
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .github
+  - .gitignore
+  - README.md
+  - LICENSE
