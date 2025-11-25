@@ -3,29 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Pages Site</title>
+    <title>My Project Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
-        <p>This is your personal or project website hosted on GitHub Pages.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Site</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Project Site</h1>
+            <p>Explore innovative projects and ideas</p>
+        </div>
     </header>
     
     <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Edit this content to tell your story, share your work, or build your portfolio.</p>
+        <!-- Featured Projects Section -->
+        <section id="projects" class="featured-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>Description of your first project goes here.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>Description of your second project goes here.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Three</h3>
+                    <p>Description of your third project goes here.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Four</h3>
+                    <p>Description of your fourth project goes here.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+            </div>
         </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Add your projects, portfolio items, or documentation here.</p>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <ul class="about-links">
+                <li><a href="#">Contact Info</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Background</a></li>
+            </ul>
         </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Add your contact information or links to your social profiles.</p>
+
+        <!-- Recent Blog Posts Section -->
+        <section id="blog" class="blog-section">
+            <h2>Recent Blog Posts</h2>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h3><a href="#">Blog Post Title One</a></h3>
+                    <p>Summary of your blog post goes here. Add interesting details about your latest project or discovery.</p>
+                </article>
+                <article class="blog-post">
+                    <h3><a href="#">Blog Post Title Two</a></h3>
+                    <p>Summary of your blog post goes here. Share your insights and experiences with your audience.</p>
+                </article>
+                <article class="blog-post">
+                    <h3><a href="#">Blog Post Title Three</a></h3>
+                    <p>Summary of your blog post goes here. Keep your readers updated with your latest work.</p>
+                </article>
+                <article class="blog-post">
+                    <h3><a href="#">Blog Post Title Four</a></h3>
+                    <p>Summary of your blog post goes here. Engage your community with quality content.</p>
+                </article>
+            </div>
+            <a href="#" class="view-all-link">All Blog Posts »</a>
         </section>
     </main>
     
