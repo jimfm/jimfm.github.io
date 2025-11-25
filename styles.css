@@ -40,6 +40,7 @@ a {
     margin: 0;
     border-bottom: 1px solid #999;
     display: flex;
+    justify-content: space-around;
 }
 
 #navbar a {
@@ -48,6 +49,8 @@ a {
     border-right: 1px solid #A0C0FF;
     display: block;
     font-weight: bold;
+    flex: 1;
+    text-align: center;
 }
 
 #navbar a:last-child {
