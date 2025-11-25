@@ -7,105 +7,102 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with navigation -->
-    <header class="header">
-        <div class="header-top">
-            <div class="logo">
-                <img src="img/jimfm_dev_check.png" alt="jimfm">
-            </div>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-menu">
+    <!-- Header -->
+    <div id="header">
+        <img src="img/jimfm_dev_check.png" alt="jimfm" height="50">
+    </div>
+
+    <!-- Navigation -->
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
+    </div>
+
+    <!-- Main container -->
+    <div id="container">
+        <!-- Left sidebar -->
+        <div id="sidebar">
+            <h3>Menu</h3>
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
-        </nav>
-    </header>
 
-    <!-- Main content with sidebar layout -->
-    <div class="content-wrapper">
-        <!-- Left sidebar -->
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </aside>
+            <h3 style="margin-top: 2rem;">Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Tools</a></li>
+            </ul>
+        </div>
 
         <!-- Main content -->
-        <main class="main-content">
-            <!-- Featured Projects Section -->
-            <section id="projects" class="featured-section">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E" alt="Project One">
-                        <h3>Project One</h3>
-                        <p>Description of your first project goes here. Add details about what makes it special.</p>
-                    </div>
-                    <div class="project-card">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E" alt="Project Two">
-                        <h3>Project Two</h3>
-                        <p>Description of your second project goes here. Highlight the key features and benefits.</p>
-                    </div>
-                    <div class="project-card">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E" alt="Project Three">
-                        <h3>Project Three</h3>
-                        <p>Description of your third project goes here. Share your accomplishments and impact.</p>
-                    </div>
-                    <div class="project-card">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E" alt="Project Four">
-                        <h3>Project Four</h3>
-                        <p>Description of your fourth project goes here. Describe the outcomes and results.</p>
-                    </div>
-                </div>
-            </section>
+        <div id="content">
+            <!-- Featured Projects -->
+            <h2>Featured Projects</h2>
+            
+            <div class="project-box">
+                <a href="#">Project One</a>
+                <p>Description of your first project goes here. Add details about what makes it special.</p>
+            </div>
+
+            <div class="project-box">
+                <a href="#">Project Two</a>
+                <p>Description of your second project goes here. Highlight the key features.</p>
+            </div>
+
+            <div class="project-box">
+                <a href="#">Project Three</a>
+                <p>Description of your third project goes here. Share your accomplishments.</p>
+            </div>
+
+            <div class="project-box">
+                <a href="#">Project Four</a>
+                <p>Description of your fourth project goes here. Describe the outcomes.</p>
+            </div>
 
             <!-- About Section -->
-            <section id="about" class="about-section">
-                <h2>About US</h2>
-                <ul class="about-links">
-                    <li><a href="#">• Contact Info</a></li>
-                    <li><a href="#">• About Me</a></li>
-                    <li><a href="#">• Background</a></li>
-                </ul>
-            </section>
+            <h2 style="margin-top: 2rem;">About US</h2>
+            <ul class="about-list">
+                <li><a href="#">• Contact Info</a></li>
+                <li><a href="#">• About Me</a></li>
+                <li><a href="#">• Background</a></li>
+            </ul>
 
-            <!-- Recent Blog Posts Section -->
-            <section id="blog" class="blog-section">
-                <h2>Recent Blog Posts</h2>
-                <div class="blog-posts">
-                    <article class="blog-post">
-                        <h3><a href="#">Blog Post Title One</a></h3>
-                        <p>Summary of your blog post goes here. Add interesting details about your latest project or discovery and what you learned along the way.</p>
-                    </article>
-                    <article class="blog-post">
-                        <h3><a href="#">Blog Post Title Two</a></h3>
-                        <p>Summary of your blog post goes here. Share your insights and experiences with your audience and explain your approach.</p>
-                    </article>
-                    <article class="blog-post">
-                        <h3><a href="#">Blog Post Title Three</a></h3>
-                        <p>Summary of your blog post goes here. Keep your readers updated with your latest work and progress in your projects.</p>
-                    </article>
-                    <article class="blog-post">
-                        <h3><a href="#">Blog Post Title Four</a></h3>
-                        <p>Summary of your blog post goes here. Engage your community with quality content that drives meaningful discussions.</p>
-                    </article>
-                </div>
-                <a href="#" class="view-all-link">All Blog Posts »</a>
-            </section>
-        </main>
+            <!-- Blog Posts -->
+            <h2 style="margin-top: 2rem;">Recent Blog Posts</h2>
+
+            <div class="blog-post">
+                <h3><a href="#">Blog Post Title One</a></h3>
+                <p>Summary of your blog post goes here. Add interesting details about your latest project or discovery and what you learned along the way.</p>
+            </div>
+
+            <div class="blog-post">
+                <h3><a href="#">Blog Post Title Two</a></h3>
+                <p>Summary of your blog post goes here. Share your insights and experiences with your audience and explain your approach.</p>
+            </div>
+
+            <div class="blog-post">
+                <h3><a href="#">Blog Post Title Three</a></h3>
+                <p>Summary of your blog post goes here. Keep your readers updated with your latest work and progress in your projects.</p>
+            </div>
+
+            <div class="blog-post">
+                <h3><a href="#">Blog Post Title Four</a></h3>
+                <p>Summary of your blog post goes here. Engage your community with quality content that drives meaningful discussions.</p>
+            </div>
+
+            <p style="margin-top: 1rem;"><a href="#">All Blog Posts »</a></p>
+        </div>
     </div>
-    
-    <footer>
+
+    <!-- Footer -->
+    <div id="footer">
         <p>&copy; 2025. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
