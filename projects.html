@@ -46,6 +46,29 @@
             <h2>Projects</h2>
 
             <div class="project-box">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="K9 Robot Controller" class="project-image">
+                <a href="#">K9 Robot Controller</a>
+                <p style="color: #999; font-size: 13px; margin: 8px 0 12px 0;">Doctor Who K-9 Robot • Python • Raspberry Pi</p>
+
+                <div style="margin: 12px 0; padding: 12px; background: #f5f7f9; border-radius: 4px;">
+                    <p style="font-weight: 600; color: #2f4f4f; margin: 0 0 8px 0; font-size: 13px;">Overview</p>
+                    <p style="margin: 0; color: #555; font-size: 13px; line-height: 1.6;">A Python-based control system for a 3D-printed K-9 robot. Integrates Xbox controller input via Bluetooth, motor drivers, and servo controllers on Raspberry Pi 3 to animate ears, tail, antenna, and laser.</p>
+                </div>
+
+                <div style="margin: 12px 0; padding: 12px; background: #f5f7f9; border-radius: 4px;">
+                    <p style="font-weight: 600; color: #2f4f4f; margin: 0 0 8px 0; font-size: 13px;">Problems & Solutions</p>
+                    <ul style="margin: 0; padding-left: 20px; color: #555; font-size: 13px; line-height: 1.6;">
+                        <li><strong>Hardware Integration Complexity:</strong> Unified GPIO, I2C, and Bluetooth in single controller with graceful degradation for development without physical hardware</li>
+                        <li><strong>Bluetooth Pairing Issues:</strong> Documented ERTM disabling workaround for Xbox One controller on Linux</li>
+                        <li><strong>Low-Power Constraints:</strong> Pi Zero W insufficient; implemented Pi 3 v2 as requirement with modular servo/motor driver classes</li>
+                        <li><strong>Testing Without Hardware:</strong> Simulation mode allows full testing of controller input and command flow without wiring</li>
+                    </ul>
+                </div>
+
+                <p style="color: #555; font-size: 13px;">Currently in proof-of-concept phase with core controller input working. Next phase: voice/audio playback, automated subroutines, full hardware wiring and integration.</p>
+            </div>
+
+            <div class="project-box">
                 <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Web Development" class="project-image">
                 <a href="#">Modern Web Application</a>
                 <p>A responsive web platform built with modern web standards. Features real-time data updates, intuitive user interface, and scalable architecture.</p>
