@@ -42,13 +42,13 @@ The site uses **CSS Flexbox for layout** with a modern aesthetic:
 - Responsive breakpoint at 768px converts to vertical layout on mobile
 - Cards/boxes use shadows, border-radius, and hover effects for depth
 
-**Color scheme (modern palette):**
-- Primary accent: Purple-to-blue gradient (#667eea to #764ba2)
-- Header & Footer: Linear gradient backgrounds
-- Sidebar: Clean white with colored section headers
-- Cards/boxes: White with subtle shadows and colored left borders
+**Color scheme (modern slate palette):**
+- Primary accent: Deep slate (#3a4451, #2f4f4f)
+- Header & Footer: Solid slate background
+- Sidebar: Clean white with slate section headers
+- Cards/boxes: White with subtle shadows and slate left borders
 - Text: Dark (#1a1a1a) for contrast on light backgrounds
-- Links & highlights: Gradient purple (#667eea)
+- Links & highlights: Slate (#3a4451)
 
 **Modern design features:**
 - Smooth transitions and hover animations on all interactive elements
@@ -65,7 +65,32 @@ Key CSS classes to know:
 
 ## Content Management
 
-Since there's no CMS or template engine, content management is **manual HTML editing**:
+### Option 1: Markdown Source Workflow (Preferred)
+
+The preferred workflow uses the `/raw` directory for content authoring in markdown:
+
+1. **Drop markdown files into `/raw/`** - Create `.md` or `.txt` files with content
+2. **Use the frontmatter format:**
+   ```markdown
+   ---
+   title: Article Title
+   original_source: https://linkedin.com/feed/... (optional)
+   author: Original Author Name (if not Jim)
+   ---
+
+   Article content in markdown format...
+   ```
+3. **Images:**
+   - Drop image files in `/raw/images/`
+   - Reference in markdown as `![alt](./images/filename.jpg)`
+   - Or hotlink to external images: `![alt](https://example.com/image.jpg)`
+4. **I will process** - Read, optionally improve writing, generate HTML blog posts, update `blog.html` and `index.html`, commit everything
+
+See `/raw/TEMPLATE.md` for detailed format guidance.
+
+### Option 2: Manual HTML Editing
+
+For quick edits without markdown processing:
 
 1. **Adding a new blog post**: Create a new HTML file (e.g., `blog-post-5.html`) following the existing blog-post template structure, then add a link to it in both `blog.html` and `index.html`
 2. **Updating the blog index**: Edit `blog.html` to add new entries and remove old ones from featured list
