@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playwright CLI - Browser Automation for AI Coding Agents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <img src="img/jimfm_dev_check.png" alt="jimfm" height="50">
+    </div>
+
+    <!-- Navigation -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <!-- Main container -->
+    <div id="container">
+        <!-- Left sidebar -->
+        <div id="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Tools</a></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div id="content">
+            <h2>Playwright CLI - Browser Automation for AI Coding Agents</h2>
+            <p style="color: #999; font-size: 13px; margin-bottom: 20px;">Posted on January 29, 2025 • 12 min read</p>
+
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=100%&h=350&fit=crop" alt="Browser Automation" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 25px;">
+
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">Browser automation has long been a cornerstone of web testing and scraping, but the tools available to AI coding agents have been limited. Enter <strong>Playwright CLI</strong>—Microsoft's command-line interface designed specifically for agents like Claude Code, optimized for token efficiency and seamless integration with AI workflows.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">What is Playwright CLI?</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">Playwright CLI is a token-efficient command-line tool for controlling web browsers through simple, agent-friendly commands. Unlike traditional Playwright libraries that require importing schemas and context, Playwright CLI operates through discrete commands that don't bloat the AI model's token budget.</p>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">From navigating to URLs and clicking elements to capturing screenshots and handling multiple browser tabs, Playwright CLI provides comprehensive browser control through a minimal, discoverable interface.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">Why Token Efficiency Matters</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">For AI coding agents, every token counts. Traditional tool schemas can consume hundreds or thousands of tokens just describing what's possible. Playwright CLI sidesteps this by offering:</p>
+                <ul style="color: #555; line-height: 1.8; margin-bottom: 15px; margin-left: 20px;">
+                    <li><strong>Simple, memorable commands</strong> - No need to load complex API documentation</li>
+                    <li><strong>Minimal context overhead</strong> - Each invocation is self-contained</li>
+                    <li><strong>Clear command structure</strong> - Predictable patterns like <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">playwright-cli click e3</code></li>
+                </ul>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">This makes it ideal for agents that need to interact with the web without paying the token tax of verbose tool definitions.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">How We Used It Today</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">In this session, we attempted to use Playwright CLI to navigate to LinkedIn and extract blog content from your professional feed. The goal was to pull interesting articles and automatically convert them into blog posts for your portfolio.</p>
+                <div style="background: #f5f7f9; padding: 12px; border-radius: 4px; margin-bottom: 15px; border-left: 3px solid #3a4451;">
+                    <code style="color: #2f4f4f;">playwright-cli open https://www.linkedin.com/feed</code>
+                </div>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">While we ultimately decided this approach had ethical concerns around LinkedIn's Terms of Service and original author rights, the exercise demonstrated the tool's capability to automate interactive tasks that would be tedious or impossible for a human operator to describe to an AI agent. It's a good reminder that just because we *can* automate something doesn't mean we should.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">Practical Code Examples</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">Here's what Playwright CLI commands look like in action:</p>
+
+                <p style="color: #2f4f4f; font-weight: 600; margin-top: 15px; margin-bottom: 10px;">Basic Navigation and Interaction</p>
+                <div style="background: #f5f7f9; padding: 12px; border-radius: 4px; margin-bottom: 15px; overflow-x: auto; font-size: 12px; line-height: 1.5;">
+                    <code style="color: #2f4f4f;">
+# Open a website<br>
+playwright-cli open https://example.com<br>
+<br>
+# Take a snapshot (get element references)<br>
+playwright-cli snapshot<br>
+<br>
+# Click an element<br>
+playwright-cli click e3<br>
+<br>
+# Fill a form field<br>
+playwright-cli fill e5 "user@example.com"<br>
+playwright-cli fill e6 "password123"<br>
+<br>
+# Submit the form<br>
+playwright-cli press Enter
+                    </code>
+                </div>
+
+                <p style="color: #2f4f4f; font-weight: 600; margin-top: 15px; margin-bottom: 10px;">Form Handling and Data Entry</p>
+                <div style="background: #f5f7f9; padding: 12px; border-radius: 4px; margin-bottom: 15px; overflow-x: auto; font-size: 12px; line-height: 1.5;">
+                    <code style="color: #2f4f4f;">
+# Select a dropdown option<br>
+playwright-cli select e9 "option-value"<br>
+<br>
+# Check a checkbox<br>
+playwright-cli check e12<br>
+<br>
+# Type text with delays<br>
+playwright-cli type "search query"<br>
+<br>
+# Upload a file<br>
+playwright-cli upload ./document.pdf
+                    </code>
+                </div>
+
+                <p style="color: #2f4f4f; font-weight: 600; margin-top: 15px; margin-bottom: 10px;">Navigation and Tab Management</p>
+                <div style="background: #f5f7f9; padding: 12px; border-radius: 4px; margin-bottom: 15px; overflow-x: auto; font-size: 12px; line-height: 1.5;">
+                    <code style="color: #2f4f4f;">
+# Go back/forward<br>
+playwright-cli go-back<br>
+playwright-cli go-forward<br>
+<br>
+# Create a new tab<br>
+playwright-cli tab-new https://example.com/page<br>
+<br>
+# Switch between tabs<br>
+playwright-cli tab-select 0
+                    </code>
+                </div>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">Future Use Cases</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">Beyond content scraping, Playwright CLI opens up interesting possibilities:</p>
+
+                <p style="color: #555; line-height: 1.8; margin-bottom: 10px;"><strong>Automated Testing of Your Portfolio</strong><br>
+                Verify that all links work, forms submit correctly, and pages load as expected. Perfect for catching regressions before pushing to production.</p>
+
+                <p style="color: #555; line-height: 1.8; margin-bottom: 10px;"><strong>Monitoring and Health Checks</strong><br>
+                Periodically verify that external services, APIs, and integrations are functioning correctly by automating user interactions and checking for expected states.</p>
+
+                <p style="color: #555; line-height: 1.8; margin-bottom: 10px;"><strong>Data Collection from UI-Only Services</strong><br>
+                Extract data from services that don't expose traditional APIs by automating the user interface interactions—useful for services with UI-only access.</p>
+
+                <p style="color: #555; line-height: 1.8; margin-bottom: 10px;"><strong>Testing Interactive Components</strong><br>
+                Before deploying new features, automatically test form submissions, multi-step wizards, and complex user flows to catch issues before they reach production.</p>
+
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;"><strong>Documentation Screenshots</strong><br>
+                Automatically capture updated screenshots of your applications for documentation by automating the steps to reach specific states.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">The Agent-First Advantage</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">What makes Playwright CLI special isn't just what it does—it's <em>how</em> it's designed. Traditional automation tools assume a human operator writing scripts. Playwright CLI assumes an AI agent orchestrating tasks on behalf of a human. This fundamental difference makes it:</p>
+                <ul style="color: #555; line-height: 1.8; margin-bottom: 15px; margin-left: 20px;">
+                    <li><strong>More discoverable</strong> - Commands are simple and self-explanatory</li>
+                    <li><strong>Less wasteful</strong> - No verbose schemas eating into context windows</li>
+                    <li><strong>More reliable</strong> - Straightforward commands mean fewer misinterpretations</li>
+                    <li><strong>Better integrated</strong> - Works naturally with agent workflows</li>
+                </ul>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">As AI coding assistants become more sophisticated, tools designed with agents in mind—rather than retrofitted for them—will become increasingly valuable.</p>
+
+                <h3 style="color: #2f4f4f; font-weight: 600; margin-top: 20px; margin-bottom: 12px; font-size: 18px;">Wrapping Up</h3>
+                <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">Playwright CLI represents a thoughtful approach to tool design for the AI era. While we didn't proceed with the LinkedIn scraping idea due to ethical concerns, the tool's capability to automate complex browser interactions opens real possibilities for testing, monitoring, and data collection workflows.</p>
+                <p style="color: #555; line-height: 1.8;">If you're building tools that AI agents need to interact with your applications, Playwright CLI is worth exploring. And if you're using Claude Code or similar agents for development work, knowing Playwright CLI is available for web automation tasks can significantly enhance your workflow.</p>
+
+                <div style="background: linear-gradient(135deg, #3a445115, #2f4f4f15); padding: 15px; border-left: 4px solid #3a4451; border-radius: 4px; margin-top: 20px;">
+                    <p style="color: #2f4f4f; font-weight: 600; margin: 0;"><strong>💡 Pro Tip:</strong> Start small with Playwright CLI by testing a simple interaction flow. Once you understand the snapshot-and-command pattern, you can build more complex automation workflows.</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 25px;"><a href="blog.html" style="color: #3a4451; font-weight: 500;">← Back to Blog</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2025. All rights reserved.</p>
+    </div>
+</body>
+</html>
