@@ -10,6 +10,9 @@
     <!-- Header -->
     <div id="header">
         <img src="img/jimfm_dev_check.png" alt="jimfm" height="50">
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 
     <!-- Navigation -->
@@ -20,24 +23,36 @@
         <a href="about.html">About</a>
     </div>
 
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+    </nav>
+
     <!-- Main container -->
     <div id="container">
         <!-- Left sidebar -->
         <div id="sidebar">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+            <div class="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
 
-            <h3 style="margin-top: 2rem;">Resources</h3>
-            <ul>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">Tools</a></li>
-            </ul>
+            <div class="sidebar-resources">
+                <h3 style="margin-top: 2rem;">Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Tools</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- Main content -->
@@ -126,5 +141,7 @@
     <div id="footer">
         <p>&copy; 2025. All rights reserved.</p>
     </div>
+
+    <script src="mobile-nav.js"></script>
 </body>
 </html>
