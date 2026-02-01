@@ -400,19 +400,7 @@ a {
     }
 
     #sidebar {
-        order: 2;
-        width: 100%;
-        border-right: none;
-        border-bottom: none;
-        padding: 20px 15px;
-    }
-
-    .sidebar-menu {
         display: none;
-    }
-
-    .sidebar-resources h3 {
-        margin-top: 0 !important;
     }
 
     .hero {
